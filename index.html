@@ -269,12 +269,12 @@
     <div class="staticrypt-form">
             <h1>PASSWORD REQUIRED</h1>
         <form id="staticrypt-form" action="#" method="post">
-            <input id="staticrypt-password"
+            <input class="crt" id="staticrypt-password"
                    name="password"
                    placeholder="password"
                    autofocus/>
 
-            <input type="submit" class="staticrypt-decrypt-button" value="SUBMIT"/>
+            <input type="submit" class="crt staticrypt-decrypt-button" value="SUBMIT"/>
         </form>
     </div>
 
@@ -290,13 +290,13 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = '9687be5c06b791f9fef64f883dc463b8d44e36dfdeb3982ee88a8e2c970517b7U2FsdGVkX183N/7qzfpx2GjAQJ+8vP/y4copSsvfeLtdMyAwHkswGZFq57xJbfP/McN09ZA6aKak21WQW2ZYcMo8QPosRJUAixPmrhpL2GjNmcw9hIk2cO9A9hkq/Q0fXzsfwKry4YwoJCAcnCi8X+eMNHOvFLThH54ThtuUulFdItq2Xo0NzbS104FXrFASf+2Y8QpkWJEY8w1yfB9IkJIh2DTC93tyf+DfTfxtFkba76hFFYr5C16oWCYG3/nZ5gT3tN/Fu63v1sde/4VgfVJVL0pq7fPKkPdlmjEztKmkeuSAAwwjsijnC06r6v/yXFq8e0LEiYoYzxYG7wNfg1/ZR0FXvbod91VwIN5AnS3lDcL3Oucc/mYy/bitt2NJvWy2ZWeP/ID3zsT29cF4Rq4UitHw/6AGryQ/D31pl+Bm/CLbGK02Xg2/OMGWUXl6lHunWUqZfCkipsb7vwm+VM4K3EiV9BkaonFAjefCDmjes8Qa1zBK0h6/mgktlU2frYTkyqh71UqhZOuwD+NospHRRAFLRqvnx540spZtGsKnJ8stB9mOO1hrsd06XE0RpzX9rQ2OYEUKc95HteANw5Ll2+R4O55miXuj1jsRLhEt7I3bBer0DkVIXdvZVhkIWAQG2PyewM5GQ9MzeOPb8TjPuqnlZ5Qfp8yTtdB1A3wWn32joYXt01pocCPAxMvKM6LUZECX6HZQ8ImozX4ZUaWfaXnzuhXefh6GFNStWKvyISKWXdW4MJMu0iDNw1aQH6KztF3uDACCPfnKqC/gxdmyOCrag/ivAN2Tr6uww/8Qy8nrTshT4N4ZUTL1aVBHq2naG/VUFzfPPXjnmCykX9m6FBGcK2BXZnvBZrCJYf6A37RH1kQk4tCqaGcTS/rXlKW/7I4UWGe6Hsfku1yO9b5chQlAS336dEffo+xqmMKenNTeDqVe4tx5QmztlW2R2/RuYTAneuR+0W86kmPqcj9zaWwNrDmbpEZL6J2Xle0SZj3ofuezWI7BjuSUpQTsNau8+kPRatO0nof9nOFYBLUuEQZpxlZ1Sk3InFRLs/SGkwMchx2xsJMT955M7A7DS1Lb1eACRQcrSdr62j0w4M0dHUJHsK1F9QuWr13SwPtlnM/wtg+ht876KyA3CEzL6kluHg4je+Anjl8ke7yfQKd0ee/4e3m7JXfqte1FkIyNB01t2ZNhoMp1lybN2LyjieZIQ+7wt5m0mDn2S0ij0U8cec9D5FYRiJd4UhqIz0hX+otljiySPmRqf1fOD9NLJ49rTJLSe4oujQzQWxmkpBB6DWaj4cNOYeoPwqmVSPLetzbuHfHQ+SCWNH5Vx+KzaRr+8HSWR5645NsyKCJTy4MJQE8CUXPQ+JoZojaw23XFnTTLNzDWNBUxkTre7z3mRsjFzow3D6OWuDvAXC2i7DOHiD06bHEKVl2xpWCli79t2ZrK5mbjHd1G5vafr0B78R+G57WlcyQMAM3Ks6B9WqLaB5N7UGkubizNfNBf4NeXGdcG1soZyA7Ei1sOD595K0vDCnnkmQXBlzyZd6NK9sNKvR9XTkiMkNQXC1TZyWlMfPbIOV+2JUZaZLOTBJQO0q3Z4vR0y8uVatUlr7go0L0b4z/zID8RRlyVwYYF8QNwiAK1kQMGBwFBYMVKhQO0veSb452dTaOL3uM88v9ZU9d0y7KGFDB5xnatcjkrIW7FStSK1t7rX+Ezq6LDVKP8gHawOiqIZdTIApQfKyh2x0rgXONLarZltCQ3OrSEccUXcpNjYSoHvKTCCbHfVqW9MDijB5bWlY9sjzgw0ZqS2WJSiDUPeGwb1bMLlWrmKgDyjFhdLnoXAU/o1Jsc+2d79QRTktuJg/+utydTRso7Cg==',
+            encryptedMsg = '76c152c822f55665855ac0f7a79757789e4c484421a99298c89183036491444fU2FsdGVkX19DcEZHOY8lIqEhcJ5XmX2kv6Z1xNXai2O6bVbHpAkkBcRA6Kt1C5vFVVGbUDobFg9kX0pnxIdTa71fDXd3/aTRQ0kUOOqtV65ogZZmVUkX3bocqSnaNnxT1JyRT3dHz0owdBlZvL+g33J3qOq+jjm44hG/2NjAvYjxRn/Flt02DpbJ+IyLR3hmAcvjtlE8Cc6wkjQuPl1VHzj/gx3ioY7DZpvhk7WmQZW9P83aP7myFOELJYlUvbgZk1CzrGQeObnUOdJIWtgcIyXtHcY1zLn19KitoTLg4S7z9zUvH4XWdN2+gFAzuSRwkoSUF/XKikHIomxIcGzSYPMDsLntVz6z60+zdUWqWxsvINmNB72YhjbWQEQIw2jEM9GyTG7/4thU3RwUz8nP2XcNVP2Z48xCKo2tXwmczISCRf+lJfDdAAs2LhwCIiQ2a3/Qk2JxGQu6ozjJE+ersdrkjLnAoGPwY00w5u2mXyl36QOD/3Fpip8hvy8hteHzRO7o7ur2IiezCnnVTWytUYGcZT50bkejZqiJoSZTddx81MXMSo9A1dHnA3xSWy2dp6DT2mmek3+WaarrQOIPzRCXa6thZ0f6Z8XlmAhZa+jXBjMoSQ9YDGOuake0SgiLBjd8+BZAYNCs/TPGEwz0awxzaKB5ZTQ24PyvjDjJqfnANV3thmwzgafNJhjzkHksh83IT6AHXgjerS64LohEj0d1Wm4jxNnvbmHI2ieF8BRUUuG1q9rz245Num2sXCMLcxgvxwxJL/yPSrxntd5JRWTY9IYRaQjDYfIewTUjQmrtkRjHMDX/0rfRi/zjDxF6BlO1j0z3U9IIL38e2pKZwm1hoRimSu7belArEg+io9Z2GyxixFPBJG03p4SaaQa2+fwcPe+tIKsiRuofv0rwW0O6P/l18LFXSC9TfrqxXaZHSlr2Hp1IGQbVvf8OG4pCxOpX3cDzyvKB+fNL5cWuDpa9Ij4q/kQ24gLKVZyOEhIBaY+nvGgzyUCD/IFeH6ZoAX0WQEero4NMOGepT+6nA/faDvbWzXOchgTq23O7/Lrsqfu+kbyKTdGz1f5AI0XwD0Qz/S4mZAkDJA2d3+XxMYXVezhzPpLRidWsg1wnubiVKkIL0NpjFrQfkIsOpTEsCad3QH4cTbRJ7EjA3Q28oJwOB9EJv72kF+y/WBh9purME5CpSkIV6/+5laaJIyjRzqVFTtALdjAmF3XryjGVgz5xL3DLcrx0c8JIvsdfKVsYkBhMfk1W+BaAopY/TcLjI/O+hXVEismnvT9M5NC9RsU0gXVNmdaGs39AOgqepaAZqxYqDg4xMZtFoLnL5SUyuvwLrOEZm4cVBXVgCK7oIgbEe93hb0P6Bsr1UUsEcIX0LwPW9w+sGYaB3pStUL0pv6T4tJVhZC41vHzNSXFG6zH3t1h59wvcci733pPdSAQ8RseN9hYkjOL8TYjc9OFcaCsxYd9rtAfWk3AxgoWUi/tdejL030bWfPo/p8jakXU8WU52lBbpC9v/Mt9puaAk9SeXWfZJJH08FQoya/4Ba292nXKsBScLpoVeXcbjc2pc2IHLtN9bCxl+/zrsMloI7j7KAt2YTTr+SPEobPSqvkfdsmA+pYX+4807q9TsOlvf2bhfitUp8qxPmMqc8CNQy2IZY6eJq8L3M5MAVBThMuNkb39L/EMAdUfZ4gkqtd8twug1cTbQehTUvdY+6lgJckiQXioXm+BHGf+l90oZv3lv0RrY3bnu5ntw6S0fwexcOkgYnLvfiwY2P+XJaswJDFnKBYFVYbWQ2gePVWBJa5C6UPbiG2wVXzPDA7JwsyV4Nv9R5WoLUdm/gRGXCAs/whahQeqGiXX4bzGkR2ZiCQ==',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
         if (decryptedHMAC !== encryptedHMAC) {
-            alert('Bad passphrase!');
+            alert('Incorrect.');
             return;
         }
 
